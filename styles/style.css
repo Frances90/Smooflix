@@ -1,0 +1,150 @@
+@import url(./color.css);
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins_bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--regurlar_purple);
+    padding: 50px;
+}
+
+header, main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_header{
+    background: var(--linear_gradient_orange);
+    width: 75%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1{
+    color: var(--text_white);
+    font-family: 'Poppins_bold';
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #585757;
+    padding-top: 20px;
+}
+
+#container_header p{
+    color: var(--text_white);
+    padding-bottom: 20px;
+}
+
+#container_abfrage_anzeige{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 75%;
+    background-color: var(--regular_light_grey) ;
+}
+
+#container_smoothie_abfrage{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    gap: 10px;
+}
+#input_smoothie_name{
+    border: 1px solid var(--regular_grey);
+    border-radius: 25px;
+    padding: 12px;
+}
+#button_smoothie{
+    border: 2px solid var(--text_black);
+    background: var(--linear_gradient_light_purple);
+    color: var(--text_white);
+    border-radius: 25px;
+    padding: 12px;
+}
+
+#smoothie_name{
+    font-family: 'Poppins_bold';
+    padding-bottom: 20px;
+}
+
+#container_ergebnis{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 85%;
+    height: auto;
+    background-color: var(--text_white);
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+#img_smoothie{
+    width: 150px;
+    height: auto;
+}
+
+#p_geschmachsrichtung{
+    background: var(--linear_gradient_orange_purple);
+    color: var(--text_white);
+    font-family: 'Poppins_bold';
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+#container_zutaten h3{
+    font-family: 'Poppins_bold';
+    padding-bottom: 15px;
+}
+
+#container_zutaten{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+#zutaten-list{
+    width: 50%;
+}
+#li_zutat{
+    border-left: 5px solid var(--regurlar_purple);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #585757;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;   
+    list-style: none;
+}

@@ -1,0 +1,12 @@
+:root{
+    --text_white: #FFFFFF;
+    --text_black: #000000;
+    --regular_white: #FFFFFF;
+    --regular_light_grey: #EEEEEE;
+    --regular_grey: #D3D3D3;
+    --regurlar_purple: #7B68EE;
+    --linear_gradient_purple: linear-gradient(135deg, #8B7ED8 0%, #6B5B95 100%);
+    --linear_gradient_orange: linear-gradient(135deg, #FF6B6B 0%, #FFB347 100%);
+    --linear_gradient_light_purple: linear-gradient(135deg, #8B7ED8 0%, #7C3AED 100%);
+    --linear_gradient_orange_purple: linear-gradient(135deg, #FFB347 0%, #FF67C0 100%);
+}
