@@ -2,13 +2,19 @@
 /* Smoothie generieren Button ein click Event geben */
 document.getElementById('button_smoothie').addEventListener('click', function() {
     var nameValue = document.getElementById('input_smoothie_name').value;
-    localStorage.setItem('inputWert',nameValue);
-    
-    document.getElementById("zutaten-list").innerHTML = "";
 
-    ladeDaten(nameValue);
+    if (nameValue != "") {
+        localStorage.setItem('inputWert',nameValue);
+        
+        document.getElementById("zutaten-list").innerHTML = "";
 
-    document.getElementById('input_smoothie_name').value = '';
+        ladeDaten(nameValue);
+
+        document.getElementById('input_smoothie_name').value = '';
+
+    }else{
+         console.log("Bitte geben Sie einen Smoothiename in das Eingabefeld ein.");
+    }
     
 });
 
